@@ -1,0 +1,36 @@
+@use "../abstracts/variables";
+
+.news {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+  .news-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .news-item {
+      background: variables.$background-light;
+      padding: 1rem;
+      max-width: 16rem;
+      box-shadow: variables.$box-shadow;
+      text-align: left;
+
+      img {
+        width: 100%;
+      }
+      h3 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

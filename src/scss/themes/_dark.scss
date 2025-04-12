@@ -1,0 +1,24 @@
+@use "../abstracts/variables";
+@media (prefers-color-scheme: dark) {
+  body {
+    background: variables.$background-dark;
+    color: variables.$text-light;
+  }
+
+  .intro,
+  .news {
+    background: darken(variables.$background-dark, 5%);
+  }
+
+  .news-item {
+    background: lighten(variables.$background-dark, 10%);
+  }
+  h3,
+  p {
+    color: variables.$text-light;
+  }
+
+  h2 {
+    color: variables.$accent-color;
+  }
+}

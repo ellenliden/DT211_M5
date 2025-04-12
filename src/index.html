@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.scss" />
+    <script type="module" src="js/app.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">
+          <img
+            src="images/logo.png"
+            alt="svartvit logotyp av geometriska former"
+            class="logo"
+          />
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Start</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">Se & göra</a>
+          </li>
+          <li class="nav-item">
+            <a href="sass.html" class="nav-link">SASS</a>
+          </li>
+          <li class="nav-item">
+            <a href="animering.html" class="nav-link">Animering</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <section class="hero">
+        <picture>
+          <source srcset="images/hero.jpg?as=avif" type="image/avif" />
+          <source srcset="images/hero.jpg?as=webp" type="image/webp" />
+          <source srcset="images/hero.jpg?" type="image/jpeg" />
+          <img
+            src="images/hero.jpg"
+            alt="stockholms skärgård"
+            class="hero-image"
+          />
+        </picture>
+        <div class="hero-content">
+          <h1>Stockholms skärgård</h1>
+          <p>
+            Arkipelagen rymmer över 30 000 öar, kobbar och skär med natursköna
+            upplevelser, klippbad, naturhamnar samt utmärkta restauranger och
+            boenden.
+          </p>
+          <div class="btn-container">
+            <a href="about.html" class="btn">Läs mer</a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- Sektion 1: Rubrik och text -->
+      <section class="intro">
+        <h2>Välkommen till Stockholms skärgård</h2>
+        <p>
+          Arkipelagen rymmer över 30 000 öar, kobbar och skär med natursköna
+          upplevelser, klippbad, naturhamnar samt utmärkta restauranger och
+          boenden.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Sektion 2: Nyhetsartiklar -->
+      <section class="news">
+        <h2>Senaste nytt</h2>
+        <div class="news-container">
+          <article class="news-item">
+            <picture>
+              <source srcset="images/hero.jpg?as=avif" type="image/avif" />
+              <source srcset="images/hero.jpg?as=webp" type="image/webp" />
+              <source srcset="images/hero.jpg?" type="image/jpeg" />
+              <img src="images/hero.jpg" alt="text" class="box-image" />
+            </picture>
+            <h3>Artikel 1</h3>
+            <p>Detta är en kort beskrivning av nyheten.</p>
+          </article>
+          <article class="news-item">
+            <picture>
+              <source srcset="images/hero.jpg?as=avif" type="image/avif" />
+              <source srcset="images/hero.jpg?as=webp" type="image/webp" />
+              <source srcset="images/hero.jpg?" type="image/jpeg" />
+              <img src="images/hero.jpg" alt="text" class="box-image" />
+            </picture>
+            <h3>Artikel 2</h3>
+            <p>Detta är en kort beskrivning av nyheten.</p>
+          </article>
+          <article class="news-item">
+            <picture>
+              <source srcset="images/hero.jpg?as=avif" type="image/avif" />
+              <source srcset="images/hero.jpg?as=webp" type="image/webp" />
+              <source srcset="images/hero.jpg?" type="image/jpeg" />
+              <img src="images/hero.jpg" alt="text" class="box-image" />
+            </picture>
+            <h3>Artikel 3</h3>
+            <p>Detta är en kort beskrivning av nyheten.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col info">
+            <h4>Stockholms Skärgård</h4>
+            <ul>
+              <li><a href="#">Om oss</a></li>
+              <li><a href="#">Blogg</a></li>
+            </ul>
+          </div>
+          <div class="footer-col support">
+            <h4>Få hjälp</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kontakta oss</a></li>
+            </ul>
+          </div>
+          <div class="footer-col policy">
+            <h4>Policys</h4>
+            <ul>
+              <li><a href="#">Integritetspolicy</a></li>
+              <li><a href="#">Miljöcertifikat</a></li>
+            </ul>
+          </div>
+          <div class="footer-col social">
+            <h4>Följ oss</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

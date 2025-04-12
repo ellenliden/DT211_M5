@@ -1,0 +1,29 @@
+.questions {
+  margin-top: 4rem;
+  max-width: 60%;
+
+  h2,
+  h3,
+  p,
+  li {
+    text-align: left;
+    margin-left: 5rem;
+  }
+
+  h2 {
+    margin-bottom: 4rem;
+
+  }
+
+  h3 {
+    margin-top: 4rem;
+  }
+  p {
+    margin-top: 1.8rem;
+  }
+
+  li {
+    text-align: left;
+    line-height: 1.8rem;
+  }
+}

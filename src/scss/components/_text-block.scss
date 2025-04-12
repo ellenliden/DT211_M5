@@ -1,0 +1,18 @@
+/* Sektion: Rubrik och text */
+.intro {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: var(--bg-color);
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    color: var(--text-color);
+  }
+}

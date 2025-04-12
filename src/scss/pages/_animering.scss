@@ -1,0 +1,120 @@
+@use "../abstracts/variables";
+@use "../base/animations";
+
+//animering-sektionen
+.animering {
+  background-color: #f5f5f5;
+  padding: 4rem 2rem;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .animering-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .animering-item {
+    background: #fff;
+    border-radius: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
+    width: 30%;
+    max-width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1.2s ease;
+    animation-delay: 0.1s;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 1.8rem;
+      color: variables.$secondary-color;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .box-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 100px;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+//block zoom-sektionen
+.block-zoom {
+  text-align: center;
+  padding: 2rem 2rem;
+
+  h4 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: variables.$primary-color;
+  }
+
+}
+
+.block-slidein {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+  
+    .slidein-box {
+      background-color: #f0f0f0;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 400px;
+      flex: 1 1 300px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  
+      &.visible {
+        animation: slideFadeIn 1s ease-out forwards;
+      }
+  
+      //delay-variation
+      &.delay-1.visible {
+        animation-delay: 0.2s;
+      }
+  
+      &.delay-2.visible {
+        animation-delay: 0.6s;
+      }
+  
+      h3 {
+        font-size: 1.5rem;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        color: #555;
+        font-size: 1rem;
+      }
+    }
+  }
+  

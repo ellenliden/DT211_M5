@@ -1,0 +1,24 @@
+@use "variables";
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button {
+  background: variables.$button-bg;
+  color: variables.$button-text;
+  padding: 0.6rem 1.6rem;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+
+  &:hover {
+    background: lighten(variables.$button-bg, 10%);
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: variables.$box-shadow;
+}

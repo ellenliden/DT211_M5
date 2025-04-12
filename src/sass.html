@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.scss" />
+    <script type="module" src="js/app.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">
+          <img
+            src="images/logo.png"
+            alt="svartvit logotyp av geometriska former"
+            class="logo"
+          />
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Start</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">Se & göra</a>
+          </li>
+          <li class="nav-item">
+            <a href="sass.html" class="nav-link">SASS</a>
+          </li>
+          <li class="nav-item">
+            <a href="animering.html" class="nav-link">Animering</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <section class="hero">
+        <picture>
+          <source srcset="images/hero.jpg?as=avif" type="image/avif" />
+          <source srcset="images/hero.jpg?as=webp" type="image/webp" />
+          <source srcset="images/hero.jpg?" type="image/jpeg" />
+          <img
+            src="images/hero.jpg"
+            alt="stockholms skärgård"
+            class="hero-image"
+          />
+        </picture>
+        <div class="hero-content">
+          <h1>SASS</h1>
+          <p>
+            Här följer en utvärdering av mitt arbete med SASS. Vilka för- och
+            nackdelar ser jag med SASS? Hur var det att komma igång att arbete
+            med en CSS-preprocessor?
+          </p>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- Sektion 1: Rubrik, text med frågor -->
+      <section class="questions">
+        <h2>SASS Utvärdering</h2>
+        <h3>Vilka för- och nackdelar ser jag med SASS?</h3>
+        <p>Fördelar:</p>
+        <ul>
+          <li>
+            Bättre struktur & underhållbarhet – Genom att dela upp koden i flera
+            SCSS-filer (partials) och använda 7-1-strukturen blir koden mer
+            organiserad och lättare att underhålla.
+          </li>
+          <li>
+            Variabler förenklar hanteringen av färger och typsnitt – Istället
+            för att skriva om samma färgkod eller typsnitt överallt, kan jag
+            använda variabler, vilket gör det enkelt att ändra designen på hela
+            webbplatsen.
+          </li>
+          <li>
+            Nesting gör koden mer läsbar – Att kunna nästla CSS-selektorer
+            minskar behovet av att upprepa klasser och gör koden mer
+            strukturerad.
+          </li>
+        </ul>
+        <p>Nackdelar:</p>
+        <ul>
+          <li>
+            Komplexare arbetsflöde - till skillnad från vanlig CSS kräver SASS
+            att jag använder en kompilator (t.ex. Parcel eller Node-skript) för
+            att generera en CSS-fil, vilket innebär fler steg att hålla koll på.
+          </li>
+          <li>
+            Kan bli för nästlad - om jag nästlar för många nivåer kan det bli
+            svårare att felsöka och underhålla koden.
+          </li>
+          <li>
+            Jag har själv inte lagt märke till det men som jag har förstått det,
+            stöder inte alla webbläsare avancerade funktioner. Även om SASS
+            genererar vanlig CSS kan vissa CSS-funktioner jag använder i mixins
+            eller variabler ändå ha kompatibilitetsproblem i äldre webbläsare.
+          </li>
+        </ul>
+        <h3>Hur var det att komma igång att arbete med en CSS-preprocessor?</h3>
+        <p>
+          Att komma igång med SASS var lite mer komblicerat jämfört med att
+          skriva vanlig CSS. Installationen via npm och att sätta upp en
+          kompilator (Parcel) känns inte som en självklarhet för mig, utan det
+          tar lite tid att förstå, men när allt är på plats blir det mycket
+          smidigare att skriva och organisera min CSS-kod.
+        </p>
+        <p>
+          Det är lite ovant att använda nesting och mixins, men ju mer jag
+          använder det, desto mer inser jag hur fördelaktigt det är. Att arbeta
+          med variabler och partials gjorde koden mer strukturerad, och jag
+          märker att det sparar tid i längden.
+        </p>
+        <p>
+          Sammanfattningsvis var det lite tröskel i början, men efter att ha
+          lärt mig grunderna upplevde jag SASS som ett mycket bättre sätt att
+          skriva CSS på!
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col info">
+            <h4>Stockholms Skärgård</h4>
+            <ul>
+              <li><a href="#">Om oss</a></li>
+              <li><a href="#">Blogg</a></li>
+            </ul>
+          </div>
+          <div class="footer-col support">
+            <h4>Få hjälp</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kontakta oss</a></li>
+            </ul>
+          </div>
+          <div class="footer-col policy">
+            <h4>Policys</h4>
+            <ul>
+              <li><a href="#">Integritetspolicy</a></li>
+              <li><a href="#">Miljöcertifikat</a></li>
+            </ul>
+          </div>
+          <div class="footer-col social">
+            <h4>Följ oss</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.scss" />
+    <script type="module" src="js/app.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">
+          <img
+            src="images/logo.png"
+            alt="svartvit logotyp av geometriska former"
+            class="logo"
+          />
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Start</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">Se & göra</a>
+          </li>
+          <li class="nav-item">
+            <a href="sass.html" class="nav-link">SASS</a>
+          </li>
+          <li class="nav-item">
+            <a href="animering.html" class="nav-link">Animering</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <section class="hero">
+        <picture>
+          <source srcset="images/hero.jpg?as=avif" type="image/avif" />
+          <source srcset="images/hero.jpg?as=webp" type="image/webp" />
+          <source srcset="images/hero.jpg?" type="image/jpeg" />
+          <img
+            src="images/hero.jpg"
+            alt="stockholms skärgård"
+            class="hero-image"
+          />
+        </picture>
+        <div class="hero-content">
+          <h1>Moment 4</h1>
+          <p>
+            Grafiska effekter med CSS - här kommer jag att visa olika typer av
+            animering. Kod för animeringar och design har skapats med hjälp av
+            SASS.
+          </p>
+          <div class="btn-container">
+            <a href="about.html" class="btn">Läs mer</a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- Sektion: animering med bildrutor -->
+      <section class="animering">
+        <h2>Kontakta oss</h2>
+        <div class="animering-container">
+          <article class="animering-item">
+            <picture>
+              <source srcset="images/avatar1.png?as=avif" type="image/avif" />
+              <source srcset="images/avatar1.png?as=webp" type="image/webp" />
+              <source srcset="images/avatar1.png?" type="image/jpeg" />
+              <img src="images/avatar1.png" alt="text" class="box-image" />
+            </picture>
+            <h3>Ellen Lidén</h3>
+            <p>elli1807@student.miun.se <br />+46(0)70-405 06 00</p>
+            <button class="btn bounce">Mejla mig</button>
+          </article>
+          <article class="animering-item">
+            <picture>
+              <source srcset="images/avatar2.png?as=avif" type="image/avif" />
+              <source srcset="images/avatar2.png?as=webp" type="image/webp" />
+              <source srcset="images/avatar2.png?" type="image/jpeg" />
+              <img src="images/avatar2.png" alt="text" class="box-image" />
+            </picture>
+            <h3>Ellen Lidén</h3>
+            <p>elli1807@student.miun.se <br />+46(0)70-405 06 00</p>
+            <button class="btn bounce">Mejla mig</button>
+          </article>
+          <article class="animering-item">
+            <picture>
+              <source srcset="images/avatar3.png?as=avif" type="image/avif" />
+              <source srcset="images/avatar3.png?as=webp" type="image/webp" />
+              <source srcset="images/avatar3.png?" type="image/jpeg" />
+              <img src="images/avatar3.png" alt="text" class="box-image" />
+            </picture>
+            <h3>Ellen Lidén</h3>
+            <p>elli1807@student.miun.se <br />+46(0)70-405 06 00</p>
+            <button class="btn bounce">Mejla mig</button>
+          </article>
+        </div>
+      </section>
+      <hr class="divider" />
+      <section class="block-slidein">
+        <div class="slidein-box delay-1">
+          <h3>Visste du att...</h3>
+          <p>Skärgården består av över 30 000 öar, kobbar och skär!</p>
+        </div>
+        <div class="slidein-box delay-2">
+          <h3>Rolig fakta!</h3>
+          <p>Stockholms skärgård är en av Europas största!</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col info">
+            <h4>Stockholms Skärgård</h4>
+            <ul>
+              <li><a href="#">Om oss</a></li>
+              <li><a href="#">Blogg</a></li>
+            </ul>
+          </div>
+          <div class="footer-col support">
+            <h4>Få hjälp</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kontakta oss</a></li>
+            </ul>
+          </div>
+          <div class="footer-col policy">
+            <h4>Policys</h4>
+            <ul>
+              <li><a href="#">Integritetspolicy</a></li>
+              <li><a href="#">Miljöcertifikat</a></li>
+            </ul>
+          </div>
+          <div class="footer-col social">
+            <h4>Följ oss</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

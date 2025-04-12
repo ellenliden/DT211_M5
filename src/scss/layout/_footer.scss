@@ -1,0 +1,97 @@
+@use "../abstracts/variables";
+
+//Återanvändbar placeholder för alla footer-rubriker
+%footer-title {
+  font-size: 1.1rem;
+  color: variables.$accent-color;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+//Använder if/else-sats för bakgrundsfär
+$dark-mode: true;
+
+.container {
+  max-width: 60rem;
+  margin: auto;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.footer {
+  //Väljer bakgrundsfärg beroende på läge
+  @if $dark-mode {
+    background-color: variables.$background-dark;
+  } @else {
+    background-color: #fff;
+  }
+
+  padding: 7rem 0;
+  margin-top: 5rem;
+
+  .footer-col {
+    width: 25%;
+    padding: 0 2rem;
+
+    h4 {
+      @extend %footer-title;
+
+    //dekorativ linje under rubriken
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.8rem;
+        background-color: variables.$accent-color;
+        height: 2px;
+        width: 3rem;
+      }
+    }
+
+    ul li:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+
+    ul li a {
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #bbbbbb;
+      text-decoration: none;
+      font-weight: 300;
+      display: block;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: variables.$text-light;
+        padding-left: 8px;
+      }
+    }
+
+    &.social .social-links a {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: variables.$text-light;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: variables.$background-dark;
+        background-color: variables.$text-light;
+      }
+    }
+  }
+}
