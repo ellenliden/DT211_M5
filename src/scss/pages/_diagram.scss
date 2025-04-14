@@ -1,0 +1,30 @@
+@use "../abstracts/variables";
+@use "../base/animations";
+
+.diagram {
+  width: 60%;
+  margin: 0 auto;
+
+  .chart-wrapper {
+    margin-bottom: 5rem;
+  }
+  .divider {
+    margin: 5rem 0;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    color: variables.$primary-color;
+    text-align: center;
+  }
+}
+
+.diagram .chart-wrapper:nth-of-type(1) {
+  width: 50rem;
+  margin: 0 auto;
+}
+
+.diagram .chart-wrapper:nth-of-type(2) {
+  width: 30rem;
+  margin: 0 auto;
+}
