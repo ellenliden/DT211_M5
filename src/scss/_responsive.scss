@@ -148,3 +148,23 @@
     min-width: 70%;
   }
 }
+
+//Karta
+.map-section {
+  margin: 2rem auto;
+
+  input,
+  button {
+    margin-bottom: 1.5rem;
+  }
+
+  input {
+    max-width: 70%;
+  }
+  button {
+    max-width: 20%;
+  }
+  #map {
+    max-width: 90%;
+  }
+}

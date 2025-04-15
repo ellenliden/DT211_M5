@@ -29,9 +29,7 @@ function renderBarChart(data) {
         {
           label: "Antal sökande",
           data: topCourses.map((course) => course.applicantsTotal),
-          backgroundColor: "rgba(54, 162, 235, 0.7)",
-          borderColor: "rgba(54, 162, 235, 1)",
-          borderWidth: 1,
+          backgroundColor: "#b77a7a",
         },
       ],
     },
@@ -64,11 +62,11 @@ function renderPieChart(data) {
           label: "Antal sökande",
           data: topPrograms.map((p) => p.applicantsTotal),
           backgroundColor: [
-            "#36A2EB",
-            "#FF6384",
-            "#FFCE56",
-            "#4BC0C0",
-            "#9966FF",
+            "#00587b", // primary
+            "#b77a7a", // secondary
+            "#ffbdbd", // accent
+            "#3386a3", // light primary 1
+            "#66a9c1", // light primary 2
           ],
         },
       ],

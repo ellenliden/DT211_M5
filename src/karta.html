@@ -6,6 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="scss/main.scss" />
     <script type="module" src="js/app.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script type="module" src="js/map.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -69,7 +76,6 @@
             upplevelser, klippbad, naturhamnar samt utmärkta restauranger och
             boenden.
           </p>
-
         </div>
       </section>
     </header>
@@ -77,11 +83,20 @@
       <!-- Sektion 1: Rubrik och text -->
       <section class="intro">
         <h2>Karta</h2>
-        <p>
-          Här kan jag placera en karta
-        </p>
-      </section>
 
+      <section class="map-section">
+        <form id="searchForm">
+          <input
+            type="text"
+            id="locationInput"
+            placeholder="Ange en plats..."
+            required
+          />
+          <button type="submit">Sök</button>
+        </form>
+        <div id="map"></div>
+      </section>
+    </section>
     </main>
     <footer class="footer">
       <div class="container">
